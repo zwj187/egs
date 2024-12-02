@@ -1,0 +1,6 @@
+.idea
+.vscode
+*.log
+rebar.lock
+_build
+.DS_Store

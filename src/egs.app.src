@@ -1,0 +1,16 @@
+{application, egs, [
+    {description, "An OTP Game Server"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {egs_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto,
+        sasl
+    ]},
+    {env, []},
+    {modules, [egs_app, egs_sup]},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+ ]}.
