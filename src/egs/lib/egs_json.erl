@@ -10,7 +10,7 @@
 
 %%
 %% TODO 借mochiweb的json模块
-%% @doc 现在已经用第三方jsx，算已经废弃
+%% @doc 现在已经用第三方jsx，算已经废弃，若使用OTP27+，则自带json模块，不再需要此模块
 %%
 
 %% API
