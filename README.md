@@ -1,15 +1,12 @@
 egs
 =====
 
-An OTP application， A Game Server.
+An OTP application， A Simple Game Server.
 
 Introduction
 -------
-egs是一个游戏服务器，用于处理游戏逻辑。  
+egs简单游戏服务。  
 
-1.基于rebar3来管理项目  
-2.使用erlang开发  
-3.使用redis+mysql作为数据。  
 
 Build
 -----
