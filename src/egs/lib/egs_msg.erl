@@ -16,7 +16,7 @@
   encode/1
 ]).
 
-%% @doc Encode数据
+%% @doc Decode 数据
 decode(Bin) ->
   case ?TRY(?JSON:decode(Bin, [{return_maps, true}, {labels, attempt_atom}])) of
     Decode when is_map(Decode) -> Decode;
@@ -25,7 +25,7 @@ decode(Bin) ->
       {?ERR_RET, bad_data}
   end .
 
-%% @doc Decode 数据
+%% @doc Encode数据
 encode(Bin) ->
   case ?TRY(?JSON:encode(Bin, [stream])) of
 %%  case ?TRY(egs_conv:to_binary(egs_json:encode(Bin))) of

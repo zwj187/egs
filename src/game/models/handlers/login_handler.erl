@@ -18,7 +18,7 @@
 
 handle_c2s(#{}=Msg, SocketPid, Player) ->
   ?PRINT("login: ~p", [Msg]),
-  proto_msg:s2c_msg(SocketPid, ?ERR_SUCCESS, #{code => 1, name => <<"zwj">>, age => 18}),
+  proto_msg:s2c_msg(SocketPid, ?ERR_SUCCESS, #{code => 1, name => <<"zwj187">>, age => 18}),
   {?OK, Player};
 
 handle_c2s(_Msg, _SocketPid, State) ->

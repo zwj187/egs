@@ -50,7 +50,7 @@ is_behaviour(Mod, Behaviour) ->
   code:ensure_loaded(Mod),
   BL = proplists:get_value(behaviour,proplists:get_value(attributes, Mod:module_info()),[]),
   BL1 = proplists:get_value(behavior,proplists:get_value(attributes, Mod:module_info()),[]),
-  lists:member(Behaviour, BL++BL1).
+  lists:member(Behaviour, BL) orelse lists:member(Behaviour, BL1).
 
 
 %% @doc 当前堆栈
